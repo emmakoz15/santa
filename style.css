@@ -1,10 +1,11 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #586c92;
+
 }
 
-.canvas{
-    background-color: #586c92;
+.mycanvas{
     height: 450px;
     width:400px;
     position:absolute;
@@ -13,6 +14,13 @@ body{
     right:0;
     top:0;
     bottom:0;
+    transform: rotate(10deg);
+    animation: nod 4s infinite;
+}
+@keyframes nod {
+    50%{
+        transform: rotate(-10deg);
+    }
 }
 .santa{
     position:relative;
@@ -25,7 +33,7 @@ body{
     height:220px;
     width:220px; 
     border-radius:0 50% 50% 50%;
-    transform: rotate(-150deg)
+    transform: rotate(-135deg)
 }
 .face{
     background-color: #fcd9c3;
@@ -35,6 +43,65 @@ body{
     bottom: 180px;
     left: 31px;
     border-radius: 35px;
-    
+}
+.hat{
+   background-color: #f14a68;
+   height: 150px;
+   width: 150px; 
+   position:relative;
+   bottom: 420px;
+   left:35px;
+   border-radius: 0 200px 0 0;
+}
+.bottom{
+    background-color: white;
+    height: 50px;
+    width: 200px; 
+    position:relative;
+    border-radius: 20px;
+    top: 140px;
+    right:25px;
+}
+.top{
+    background-color: white;
+    height: 35px;
+    width: 35px; 
+    position:relative;
+    border-radius: 50%;
+    bottom: 65px;
+    right:35px;
+}
+.eyel, .eyer{
+    height:15px ;
+    width:30px;
+    border-top: 8px solid #262626;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+}
+.eyel{
+    left:32px;
+    top:20px;
+}
+.eyer{
+    bottom: 3px;
+    left:92px;
+}
+.nose{
+    background-color: #fbd1b6;
+    height: 30px;
+    width:35px;
+    position:relative;
+    border-radius: 50%;
+    left: 60px;
 
+}
+.mouth{
+    background-color: #262626;
+    height: 20px;
+    width: 40px; 
+    position:relative;
+    border-radius: 0 0 20px 20px;
+    top: 3px;
+    left:57px;
+    opacity: 0.8;
 }
